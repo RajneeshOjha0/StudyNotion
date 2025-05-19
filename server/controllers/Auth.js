@@ -156,7 +156,7 @@ const sendOTP = async (req, res) =>  {
     try {
         const {email} = req.body;                                     //fetch email from request ki body
         const checkUserPresent = await User.findOne({email});        //check if user already exist
-
+        // console.log(checkUserPresent)
         if(checkUserPresent) {                                      //if user already exist , then return a response
             return res.status(401).json({
                 success:false,
@@ -169,7 +169,7 @@ const sendOTP = async (req, res) =>  {
             lowerCaseAlphabets:false,
             specialChars:false,
         });
-        console.log("OTP generated: ", otp );
+        // console.log("OTP generated: ", otp );
 
         let result = await OTP.findOne({otp: otp});               //check unique otp or not
         while(result){                                            // if result is true so we regenerate otp;
@@ -182,7 +182,7 @@ const sendOTP = async (req, res) =>  {
 
         //create an entry in OTP in DB and this OTP is used in SignUp to find response;
         const otpBody = await OTP.create(otpPayload);
-        console.log("OTP Body", otpBody);
+        // console.log("OTP Body", otpBody);
 
         res.status(200).json({                                     //return response successful
             success:true,
