@@ -53,8 +53,8 @@ MONGODB_URL=mongodb://localhost:27017/
 # Server Port
 PORT=4000
 ```
+### these are example of .env file
 
-> ⚠️ **Important:** Do not expose your real `.env` credentials in public repositories.
 
 ---
 
@@ -75,14 +75,26 @@ STUDYNOTION/
 ├── node_modules/              # Node dependencies
 ├── public/                    # Public static assets
 ├── server/                    # Backend - Express, MongoDB logic
+│   ├── config/
 │   ├── controllers/
+│   ├── mail/
+│   ├── middlewares/
 │   ├── models/
 │   ├── routes/
 │   └── utils/
+│   └── index.js
+│   └── package.js
+│   └── package.lock.js
 ├── src/                       # Frontend - ReactJS logic
+│   ├── assets/
 │   ├── components/
+│   ├── data/
+│   ├── hooks/
 │   ├── pages/
-│   ├── redux/
+│   ├── reducer/
+│   ├── services/
+│   ├── slices/
+│   ├── utils/
 │   └── App.js
 ├── .gitignore
 ├── package.json
