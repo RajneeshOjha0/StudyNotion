@@ -1,6 +1,96 @@
-# StudyNotion Online Education Platform (MERN App) [Website Link](https://studynotion-frontend.vercel.app/)
+# StudyNotion Online Education Platform (MERN App)  
+[Website Link](https://study-notion-murex-chi.vercel.app/)
 
-![Main Page](images/mainpage.png)
+## 🛠️ Getting Started
+
+### 📦 Project Setup
+
+To run the StudyNotion project locally, follow the steps below:
+
+#### 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/your-username/study-notion.git
+cd study-notion
+```
+
+#### 2. **Install Dependencies**
+
+```bash
+npm install
+```
+
+This installs dependencies for the project.
+
+#### 3. **Environment Configuration**
+
+Create a `.env` file in the root of your project and paste the following content:
+
+```env
+# Email Configuration
+MAIL_HOST=smtp.gmail.com
+MAIL_USER=codehmy1@gmail.com
+MAIL_PASS=dzgvtybtweasxrqd
+
+# JWT Secret Key
+JWT_SECRET=rajneesh
+
+# Folder Name
+FOLDER_NAME=studyNotin
+
+# Razorpay Credentials
+RAZORPAY_KEY=rzp_test_t4L4KXw6wHc
+RAZORPAY_SECRET=DOdtPrjxQejIdj1vAzm0MY
+
+# Cloudinary Credentials
+CLOUD_NAME=dyvzbi
+API_KEY=539875545
+API_SECRET=Knwp0xVFm2pJR1ITQ
+
+# Database URL
+MONGODB_URL=mongodb://localhost:27017/
+
+# Server Port
+PORT=4000
+```
+
+> ⚠️ **Important:** Do not expose your real `.env` credentials in public repositories.
+
+---
+
+### ▶️ Running the App Locally
+
+```bash
+npm run dev
+```
+
+This will start the application for development. Make sure MongoDB is running locally.
+
+---
+
+## 📁 Folder Structure
+
+```
+STUDYNOTION/
+├── node_modules/              # Node dependencies
+├── public/                    # Public static assets
+├── server/                    # Backend - Express, MongoDB logic
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── utils/
+├── src/                       # Frontend - ReactJS logic
+│   ├── components/
+│   ├── pages/
+│   ├── redux/
+│   └── App.js
+├── .gitignore
+├── package.json
+├── README.md
+└── tailwind.config.js
+```
+
+---
 
 ## Project Description
 
@@ -9,7 +99,7 @@ and rate educational content. The platform is built using the MERN stack, which 
 ReactJS, NodeJS, MongoDB, and ExpressJS.
 StudyNotion aims to provide:
 * A seamless and interactive learning experience for students, making education
-more accessible and engaging.
+more accessible and engaging.I
 * A platform for instructors to showcase their expertise and connect with learners
 across the globe.
 In the following sections, we will cover the technical details of the platform, including:
@@ -69,7 +159,7 @@ relevant information related to the platform.
 Here is a high-level diagram that illustrates the architecture of the StudyNotion ed-tech
 platform:
 
-![Architecture](images/architecture.png)
+<!-- ![Architecture](images/architecture.png) -->
 
 ## Front End
 
@@ -168,7 +258,7 @@ for an ed-tech platform, with a focus on security, reliability, and ease of use.
 right frameworks, libraries, and tools, we can ensure that the platform functions smoothly
 and provides an optimal user experience for all its users.
 
-![Database Schema](images/schema.png)
+<!-- ![Database Schema](images/schema.png) -->
 
 ## API Design
 
