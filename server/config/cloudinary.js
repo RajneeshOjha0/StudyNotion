@@ -1,5 +1,7 @@
 const cloudinary = require("cloudinary").v2;                         //! Cloudinary is being required
 
+
+//either you can store it to aws s3
 exports.cloudinaryConnect = () => {
 	try {
 		cloudinary.config({                                       	// Configuring the Cloudinary to Upload MEDIA 
